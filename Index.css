@@ -1,0 +1,177 @@
+/* Styling the Body element i.e. Color,
+		Font, Alignment */
+        *{
+             margin: 0px;
+            padding: 0px; 
+           
+        }
+        
+   
+
+		body {
+			background-image: url(./survey.png);
+			font-family:'Poppins', sans-serif;
+			text-align: center;
+            background-size: cover;
+            background-attachment: fixed;
+        
+		}
+
+    
+        a{
+            text-decoration: none;
+        }
+        .navbar {
+            background-color: rgb(14, 13, 13);
+           
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            box-shadow: 0 5px 10px rgb(0,0,0,0.1);
+            z-index: 100;
+            padding: 6px 6%;
+            position: sticky;
+            top: 0px;
+           
+        } 
+        .navbar-left img{
+            width: 44px;
+            margin-right: 30px;
+            margin-left: -50px;
+            border-radius: 3px;
+        }
+        .navbar-left {
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        .content{
+            cursor: pointer;
+        }
+        .navbar-right img{
+            width: 50px;
+            border-radius: 3px;
+            margin-right: 15px;
+           
+            
+        }
+        .navbar-right{
+            display: flex;
+            align-items: center;
+            float: right;
+           
+        }
+        .text a{
+            font-size: 18px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            background-color: rgb(105, 104, 104);
+            border: 1.5px solid grey;
+            border-radius: 5px;
+            margin-top:8px ;
+            margin-bottom:8px ;
+            margin-right: -5px;
+            margin-left: 15px;
+            padding: 8px;
+            
+        }
+        .text a:hover{
+         background-color:orange;
+         text-decoration:underline;
+         color:blanchedalmond;
+        }
+        /* --------  ------ navbar end ------  ----- */
+
+.head h1,h3{
+    font-weight: 800;
+    font-variant: small-caps;
+    font-style:oblique;
+}
+
+
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: rgb(128, 80, 80);
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+            border-radius: 10px;
+			box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+			font-size: larger;
+			font-family: 'Poppins', sans-serif;
+			color: #fff;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 2px solid rgb(44, 40, 40);
+			border-radius: 5px;
+			font-family: inherit;
+			font-size: medium;
+			padding: 10px;
+			display: inline;
+			width: 95%;
+			
+		}
+
+		.form-control input{
+			height: 1.0em;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #05c46b;
+			border: 1px solid #777;
+			border-radius: 10px;
+			font-family: "Gill Sans", sans-serif;
+			font-size: 2.2rem;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+            cursor: pointer;
+		}
+
+		
+
+        @media only screen and (max-width:580px) {
+            .navbar{
+              display: block;
+              text-align: center;
+            }
+            .navbar-left {
+                display: block;
+                height: auto;
+                width: fit-content;
+            }
+            .navbar-right {
+                display: block;
+                height: auto;
+                width: auto;
+            }
+      }
